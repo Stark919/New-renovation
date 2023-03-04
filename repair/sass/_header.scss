@@ -1,25 +1,17 @@
-@media (min-width: 320px) {
-  .continer {
-    max-width: 85%;
-    margin: auto;
-  }
-  .nav-bar {
+@media (min-width: 310px) {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px 10px 0px;
   }
-  button {
-    background-color: $main-color;
-    border: none;
-    border-radius: 6px;
-  }
-  .nav-bar__button {
+
+  .navbar__button {
     padding: 15px 26px 14px 26px;
     font-size: 10px;
     font-weight: bold;
   }
-  .contacts {
+  .navbar__info-contacts {
     display: none;
   }
   .logo-img_max {
@@ -27,30 +19,31 @@
   }
 }
 
-@media (min-width: 710px) {
-  .nav-bar__info {
+@media (min-width: 910px) {
+  .navbar__info {
     display: flex;
     align-items: center;
   }
-  .contacts__text {
+  .contacts__info-text {
     font-size: 13px;
     color: $text-color;
     font-weight: 300;
     text-align: right;
   }
 
-  .contacts {
+  .navbar__info-contacts {
     margin-right: 30px;
     display: block;
   }
 
-  .contacts_room {
+  .contacts__info_room {
     color: $text-color;
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
+    font-family: "Museo Sans Bold";
   }
-  .nav-bar__button {
+  .navbar__button {
     padding: 18px 29px 18px 35px;
     font-size: 13px;
     font-weight: bold;
