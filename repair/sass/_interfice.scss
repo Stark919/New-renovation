@@ -7,13 +7,16 @@
 body {
   font-family: "Museo Sans Light", sans-serif;
 }
+// img {
+//   max-width: 100%;
+// }
 
 button {
   background-color: $main-color;
   border: none;
   border-radius: 10px;
   transition: 0.2s;
-  
+  color: $text-color;
 }
 button:hover {
   cursor: pointer;
@@ -26,7 +29,7 @@ h3 {
   color: $text-color;
 }
 input {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #999999;
   color: #999999;
   outline: none;
@@ -53,7 +56,13 @@ li {
 
 @media (min-width: 1200px) {
   .continer {
-    max-width: 60%;
+    width: 65%;
     margin: auto;
   }
 }
+
+// @media (max-width: 1315px) {
+//   .container {
+//     width: 73%;
+//   }
+// }

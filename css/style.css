@@ -13,6 +13,7 @@ button {
   border: none;
   border-radius: 10px;
   transition: 0.2s;
+  color: #333333;
 }
 
 button:hover {
@@ -27,7 +28,7 @@ h3 {
 }
 
 input {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #999999;
   color: #999999;
   outline: none;
@@ -54,7 +55,7 @@ li {
 }
 @media (min-width: 1200px) {
   .continer {
-    max-width: 60%;
+    width: 65%;
     margin: auto;
   }
 }
@@ -254,16 +255,12 @@ li {
   .offer__input {
     padding: 22px 80px 22px 22px;
     margin-bottom: 12px;
-    max-width: 275px;
-  }
-  .offer__input:first-child {
-    margin-bottom: 8px;
+    width: 100%;
   }
   .offer__button {
     padding: 20px 19px;
     text-align: center;
     font-size: 14px;
-    max-width: 275px;
     font-family: "Museo Sans Bold";
     max-height: 70px;
     width: 100%;
@@ -341,14 +338,13 @@ li {
   }
   .offer__input {
     padding: 20px 25px;
-    width: 240px;
+    width: 48%;
     margin-bottom: 25px;
   }
   .offer__button {
     padding: 27px 28px;
     font-size: 16px;
     font-family: "Museo Sans Bold";
-    max-width: 495px;
     width: 100%;
     white-space: nowrap;
     min-height: 70px;
@@ -358,20 +354,18 @@ li {
   }
   .offer__info {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
   }
   .offer__info-text {
     margin-bottom: 0px;
-    margin-right: 90px;
     text-align: left;
   }
   .offer__info-tel {
     text-align: left;
   }
-}
-@media (max-width: 1800px) {
-  .offer__input {
-    width: 100%;
-    max-width: 495px;
+  .offer__form_block {
+    display: flex;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */
