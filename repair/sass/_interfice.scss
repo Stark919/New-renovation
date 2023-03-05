@@ -11,8 +11,9 @@ body {
 button {
   background-color: $main-color;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   transition: 0.2s;
+  
 }
 button:hover {
   cursor: pointer;
@@ -45,21 +46,14 @@ li {
 
 @media (min-width: 310px) {
   .continer {
-    max-width: 80%;
+    max-width: 65%;
     margin: auto;
   }
 }
 
-@media (min-width: 1210px) {
+@media (min-width: 1200px) {
   .continer {
     max-width: 60%;
     margin: auto;
   }
 }
-
-// @media (min-width: 2000px) {
-//   .continer {
-//     max-width: 60%;
-//     margin: auto;
-//   }
-// }

@@ -6,7 +6,7 @@
   }
 
   .hero__title {
-    font-size: 22px;
+    font-size: 21px;
     margin-bottom: 12px;
     max-width: 260px;
     font-family: "Museo Sans Bold";
@@ -46,13 +46,14 @@
   .hero-list__text {
     font-size: 12px;
     max-width: 200px;
+    font-family: "Museo Sans Light";
   }
   .main-img-max {
     display: none;
   }
 }
 
-@media (min-width: 810px) {
+@media (min-width: 910px) {
   .hero {
     display: flex;
     align-items: center;
@@ -79,6 +80,7 @@
     max-width: 232px;
     color: $text-color;
     line-height: 1.5;
+    font-family: "Museo Sans Light";
   }
 }
 
