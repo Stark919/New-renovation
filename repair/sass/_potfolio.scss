@@ -1,0 +1,94 @@
+@media (min-width: 310px) {
+  .portfolio {
+    background-color: $background-color;
+    padding-top: 44px;
+    padding-bottom: 64px;
+  }
+  .portfolio__title {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-family: "Meseo Sans Bold";
+    color: $text-color;
+    max-width: 715px;
+    margin-bottom: 50px;
+  }
+  .icon-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .arrow-left {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .arrow-right {
+    cursor: pointer;
+  }
+  .slider {
+    margin-bottom: 35px;
+  }
+  .slider__img {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 761px) {
+  .slider__img {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    position: relative;
+  }
+
+  .portfolio__block {
+    position: relative;
+  }
+
+  .portfolio__title {
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    font-family: "Meseo Sans Bold";
+    color: $text-color;
+    max-width: 715px;
+    margin-bottom: 100px;
+  }
+
+  .icon-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-left {
+    margin-right: 30px;
+  }
+
+  .portfolio::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/portfolio/dots_background.jpg");
+  }
+
+  .slider {
+    margin-bottom: 35px;
+  }
+
+  .slider__img {
+    margin-right: 25px;
+  }
+  .slider__img:last-child {
+    margin-right: 0px;
+  }
+}

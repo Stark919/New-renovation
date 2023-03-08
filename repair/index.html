@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
     <title>Ремонт квартир</title>
   </head>
   <body>
@@ -17,76 +19,165 @@
               src="../img/img-logo/Логотип.png"
               alt="Логотип Ремонт"
             />
-            <img class="logo-img_max" src="../img/img-logo/Logo-max.png" alt="">
+            <img
+              class="logo-img_max"
+              src="../img/img-logo/Logo-max.png"
+              alt=""
+            />
           </div>
           <div class="navbar__info">
-          <div class="navbar__info-contacts">
-            <p class="contacts__info-text">Калуга, Москва, МО
-            </p>
-            <a class="contacts__info_room" href="tel:+7(495)42-251-31">+7 (495) 42-251-31
-            </a>
-          </div>
-            <button class="button navbar__button">Перезвоните мне</button>
+            <div class="navbar__info-contacts">
+              <p class="contacts__info-text">Калуга, Москва, МО</p>
+              <a class="contacts__info_room" href="tel:+7(495)42-251-31"
+                >+7 (495) 42-251-31
+              </a>
+            </div>
+            <button class="button navbar__button" id="button">
+              Перезвоните мне
+            </button>
           </div>
         </div>
       </div>
     </header>
 
     <section class="main">
-    <div class="continer">  
-      <div class="hero">
-        <div class="hero-block">
-        <h1 class="hero__title">Внутренняя отделка 
-          помещений "под ключ"
-          </h1>
-        <p class="hero__subtitle">с гарантией качества, прописанной в договоре
-        </p>
-        <ul class="hero-list">
-          <li class="hero-list__etem"><div class="hero-list__img"><img  src="../img/clock-circular-outline/clock(1).png" alt=""></div>
-            <span class="hero-list__text"> Точно соблюдаем сроки</span>
-          </li>
-          <li class="hero-list__etem"><div class="hero-list__img"><img   src="../img/clock-circular-outline/calculator.png" alt=""></div> 
-            <span class="hero-list__text">Рассчитаем смету на работы
-            и материалы в день обращения</span>
-            </li>
-          <li class="hero-list__etem"><div class="hero-list__img"><img  src="../img/clock-circular-outline/paint.png" alt=""></div>
-            <span class="hero-list__text">Предложим более 100 вариантов 
-            исполнения дизайна Вашего жилья</span> 
-            </li>
-        </ul>
+      <div class="continer">
+        <div class="hero">
+          <div class="hero-block">
+            <h1 class="hero__title">Внутренняя отделка помещений "под ключ"</h1>
+            <p class="hero__subtitle">
+              с гарантией качества, прописанной в договоре
+            </p>
+            <ul class="hero-list">
+              <li class="hero-list__etem">
+                <div class="hero-list__img">
+                  <img
+                    src="../img/clock-circular-outline/clock(1).png"
+                    alt=""
+                  />
+                </div>
+                <span class="hero-list__text">Точно соблюдаем сроки</span>
+              </li>
+              <li class="hero-list__etem">
+                <div class="hero-list__img">
+                  <img
+                    src="../img/clock-circular-outline/calculator.png"
+                    alt=""
+                  />
+                </div>
+                <span class="hero-list__text"
+                  >Рассчитаем смету на работы и материалы в день обращения</span
+                >
+              </li>
+              <li class="hero-list__etem">
+                <div class="hero-list__img">
+                  <img src="../img/clock-circular-outline/paint.png" alt="" />
+                </div>
+                <span class="hero-list__text"
+                  >Предложим более 100 вариантов исполнения дизайна Вашего
+                  жилья</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hero-block__img">
+            <img class="main-img" src="../img/main-img.png" alt="" />
+            <img class="main-img-max" src="../img/main-img-max.png" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="hero-block__img">
-      <img class="main-img" src="../img/main-img.png" alt="">
-      <img class="main-img-max" src="../img/main-img-max.png" alt="">
-    </div>
-  </div>
     </section>
 
     <section class="offer">
-    <div class="continer">
-      <d  iv class="offer-block">
-        <h2 class="offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
-        </h2>
-        <span class="offer_subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!
-        </span>
-        <form action="#" class="offer__form"> 
-          <div class="offer__form_block">
-          <input type="text" name="#" id="#" class="input offer__input" placeholder="Ваше имя">
-          <input type="tel" name="#" id="#" class="input offer__input" placeholder="Ваш телефон">
-        </div>
-          <button class="button offer__button"><span>Получить бесплатный дизайн-проект</span>
-          </button>
-              </form>
-         <div class="offer__info">
-          <span class="offer__info-text">Наш менеджер перезвонит Вам
-            в течение 60 секунд
+      <div class="continer">
+        <div class="offer-block">
+          <h2 class="offer__title">
+            Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
+          </h2>
+          <span class="offer_subtitle"
+            >Оставьте заявку на разработку бесплатного дизайн-проекта!
+          </span>
+          <form action="#" class="offer__form">
+            <div class="offer__form_block">
+              <input
+                type="text"
+                name="#"
+                id="#"
+                class="input offer__input"
+                placeholder="Ваше имя"
+              />
+              <input
+                type="tel"
+                name="#"
+                id="#"
+                class="input offer__input"
+                placeholder="Ваш телефон"
+              />
+            </div>
+            <button class="button offer__button">
+              <span>Получить бесплатный дизайн-проект</span>
+            </button>
+          </form>
+          <div class="offer__info">
+            <span class="offer__info-text"
+              >Наш менеджер перезвонит Вам в течение 60 секунд
             </span>
-            <span class="offer__info-tel">или перезвоните нам сами 
-              <a href="tel:+7(495)42-251-31"> <br>+7 (495) 42-251-31</a></span>
-         </div>
-      </div>
+            <span class="offer__info-tel"
+              >или перезвоните нам сами
+              <a href="tel:+7(495)42-251-31"><br />+7 (495) 42-251-31</a>
+            </span>
+          </div>
+        </div>
       </div>
     </section>
-    
+
+    <section class="portfolio">
+      <div class="continer">
+        <div class="portfolio__block">
+          <h1 class="portfolio__title">
+            Работая с 2007 года,<br />
+            мы сделали более 500 ремонтов в квартирах и домах
+          </h1>
+          <div class="slider">
+            <img src="../img/portfolio/Слой1.png" alt="" class="slider__img" />
+            <img src="../img/portfolio/Слой2.png" alt="" class="slider__img" />
+            <img src="../img/portfolio/Слой3.png" alt="" class="slider__img" />
+            <img src="../img/portfolio/Слой1.png" alt="" class="slider__img" />
+            <img src="../img/portfolio/Слой2.png" alt="" class="slider__img" />
+            <img src="../img/portfolio/Слой3.png" alt="" class="slider__img" />
+          </div>
+          <div class="icon-arrow">
+            <img
+              src="../img/portfolio/left-arrow .png"
+              alt=""
+              class="arrow-left"
+            />
+            <img
+              src="../img/portfolio/right-arrow.png"
+              alt=""
+              class="arrow-right"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times</button>
+        <h4 class="modal__dialog_title">Всплывающие окно</h4>
+      </div>
+    </div>
+
+    <script src="../repair/js/main.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../repair/js/slick.min.js"></script>
+    <script src="../repair/js/slick.js"></script>
   </body>
-</html> 
+</html>
