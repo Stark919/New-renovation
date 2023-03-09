@@ -1,0 +1,213 @@
+@media (min-width: 310px) {
+  .price {
+    padding-top: 53px;
+    padding-bottom: 63px;
+  }
+  .price__title {
+    text-align: center;
+    font-size: 21px;
+    color: #000;
+    font-family: "Museo Sans Bold";
+    max-width: 315px;
+    margin: auto;
+    // line-height: 1.5;
+    margin-bottom: 60px;
+  }
+  .price__subtitle {
+    margin: auto;
+    font-size: 20px;
+    font-family: "Mesuo Sans Light";
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cards__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 30px;
+    transition: 0;
+  }
+  .cards__img:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  }
+  .cards__img_title {
+    font-size: 14px;
+    font-family: "Museo Sans Ligth";
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 23px;
+  }
+  .cards__img_subtitle {
+    font-style: 16px;
+    font-family: "Museo Sans Bold";
+    margin-bottom: 31px;
+    color: $text-color;
+    text-decoration: none;
+    position: relative;
+  }
+  .cards__img_subtitle::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: $main-color;
+    display: block;
+    transition: 0.2s;
+  }
+  .cards__img_subtitle:hover::after {
+    height: 12px;
+    z-index: -1;
+  }
+  .cards__img_max {
+    display: none;
+  }
+  .cards__img_min {
+    position: relative;
+  }
+
+  .cards__img_min::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      #ffd200 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+    transition: 0.2s;
+  }
+  .cards__img_min:hover::before {
+    opacity: 1;
+  }
+
+  .cards__img_min > img {
+    display: block;
+  }
+}
+
+@media (min-width: 850px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  .price__title {
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    font-family: "Museo Sans Bold";
+    max-width: 515px;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+
+  .price__subtitle {
+    margin: auto;
+    font-size: 20px;
+    font-family: "Mesuo Sans Light";
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .cards__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 30px;
+    transition: 0;
+  }
+  .cards__img:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  }
+  .cards__img_max:hover::before {
+    opacity: 1;
+  }
+  .cards__img_title {
+    font-size: 18px;
+    font-family: "Museo Sans Ligth";
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 23px;
+  }
+  .cards__img_subtitle {
+    font-style: 16px;
+    font-family: "Museo Sans Bold";
+    margin-bottom: 47px;
+    color: $text-color;
+    text-decoration: none;
+    position: relative;
+  }
+  .cards__img_subtitle::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: $main-color;
+    display: block;
+    transition: 0.2s;
+  }
+  .cards__img_subtitle:hover::after {
+    height: 12px;
+    z-index: -1;
+  }
+  .cards__img_max {
+    position: relative;
+  }
+
+  .cards__img_max::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      #ffd200 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+    transition: 0.2s;
+  }
+  .cards__img_min {
+    display: none;
+  }
+  .cards__img_max {
+    display: block;
+  }
+  .cards__img_max > img {
+    display: block;
+  }
+}
