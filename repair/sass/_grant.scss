@@ -1,0 +1,49 @@
+@media (min-width: 310px) {
+  .grant__title {
+    font-family: "Museo Sans Bold";
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin: auto;
+    max-width: 230px;
+    margin-top: -40px;
+    margin-bottom: 50px;
+  }
+  .grant__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grant__doc_sibtitile {
+    font-size: 14px;
+    font-family: "Meseo Sans Ligth";
+    color: #000;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    max-width: 210px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grant__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .grant__title {
+    font-size: 30px;
+    line-height: 1.5;
+    max-width: 650px;
+    margin-bottom: 100px;
+  }
+  .grant__doc_sibtitile {
+    font-size: 18px;
+    max-width: 270px;
+  }
+  .grant {
+    padding-bottom: 175px;
+  }
+}

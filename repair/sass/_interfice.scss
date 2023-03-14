@@ -17,6 +17,7 @@ button {
   border-radius: 10px;
   transition: 0.2s;
   color: $text-color;
+  padding: 27px 28px;
 }
 button:hover {
   cursor: pointer;
@@ -33,6 +34,7 @@ input {
   border: 1px solid #999999;
   color: #999999;
   outline: none;
+  padding: 20px 25px;
 }
 input:focus {
   border: 1px solid $main-color;
@@ -54,11 +56,45 @@ li {
 .slider__img:hover {
   cursor: grabbing;
 }
+.Grand-line {
+  width: 100%;
+  max-height: 280px;
+  background-color: #ffc000;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.Grand-line__title {
+  font-size: 32px;
+  text-align: center;
+  margin: auto;
+  font-family: "Museo Sans Light";
+  color: #000;
+  max-width: 915px;
+  line-height: 1.5;
+}
 
 @media (min-width: 310px) {
   .continer {
     max-width: 65%;
     margin: auto;
+  }
+  .Grand-line {
+    max-height: 230px;
+    height: 230px;
+    margin-top: 30px;
+  }
+  .Grand-line__title {
+    font-size: 18px;
+    max-width: 345px;
+  }
+}
+@media (min-width: 750px) {
+  .Grand-line__title {
+    font-size: 24px;
+    max-width: 465px;
   }
 }
 
@@ -67,10 +103,23 @@ li {
     width: 65%;
     margin: auto;
   }
+  .Grand-line {
+    width: 100%;
+    max-height: 280px;
+    background-color: $main-color;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .Grand-line__title {
+    font-size: 32px;
+    text-align: center;
+    margin: auto;
+    font-family: "Museo Sans Light";
+    color: #000;
+    max-width: 915px;
+    line-height: 1.5;
+  }
 }
-
-// @media (max-width: 1315px) {
-//   .container {
-//     width: 73%;
-//   }
-// }
