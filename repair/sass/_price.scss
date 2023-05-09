@@ -75,6 +75,10 @@
     position: relative;
   }
 
+  .cards__img_min > img {
+    width: 100%;
+  }
+
   .cards__img_min::before {
     content: "";
     position: absolute;

@@ -382,6 +382,9 @@
             <form action="#">
               <input
                 type="text"
+                name="username"
+                required
+                minlength="2"
                 class="input brif__input"
                 placeholder="Ваше имя"
               />
@@ -400,10 +403,84 @@
       </div>
     </section>
 
+    <footer class="footer">
+      <div class="map" id="map">
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba8fcc261136a102d0d1efca998cc1b1ed675d8848f25c6b4b97d56252498696&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=true"
+        ></script>
+      </div>
+      <!-- <div class="continer"> -->
+      <div class="contacts-block">
+        <div class="contacts">
+          <h3 class="contacts__title">
+            Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам
+            ремонта
+          </h3>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <spam class="contacts-list__icon"
+                ><img src="../img/footer/1.png" alt=""
+              /></spam>
+              <span class="contacts-list__text"
+                >г. Москва :<br />ул. Ленинга, д. 10,<br />
+                корпус 2, оф. 308</span
+              >
+            </li>
+            <li class="contacts-list__item">
+              <spam class="contacts-list__icon"
+                ><img src="../img/footer/2.png" alt=""
+              /></spam>
+              <span class="contacts-list__text"
+                >Режим работы:<br />
+                с 9:00 до 18:00
+              </span>
+            </li>
+            <li class="contacts-list__item">
+              <spam class="contacts-list__icon"
+                ><img src="../img/footer/3.png" alt=""
+              /></spam>
+              <span class="contacts-list__text"
+                >Телефон:<br /><a href="tel: 7 (495) 42-251-31">
+                  + 7 (495) 42-251-31</a
+                ></span
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
+      </div>
+    </footer>
+
     <div class="modal" id="modal">
       <div class="modal-dialog">
+        <h3 class="modal-dialog__title">
+          Оставьте заявку на бесплатный расчет ремонта по телефону
+        </h3>
+        <span class="form__subtitle modal-dialog__subtitle">Для этого заполните форму ниже </span>
         <button class="modal-dialog__close" id="close">&times</button>
-        <h4 class="modal__dialog_title">Всплывающие окно</h4>
+        <form action="#" class="modal-dialog__form">
+          <input
+            type="text"
+            name="username"
+            required
+            minlength="2"
+            class="input brif__input"
+            placeholder="Ваше имя"
+          />
+          <input
+            type="tel"
+            class="input brif__input"
+            placeholder="Ваш телефон"
+          />
+          <button class="button brif__button">Узнать стоймость</button>
+          <span class="modal-dialog__subtitle"
+            >Мы перезвоним Вам в течение 60 секунд
+          </span>
+        </form>
+        <!-- <h4 class="modal__dialog_title">Всплывающие окно</h4> -->
       </div>
     </div>
 

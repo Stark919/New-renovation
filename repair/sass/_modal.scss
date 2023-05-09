@@ -13,11 +13,12 @@
   margin: auto;
   max-width: 450px;
   width: 80%;
-  min-width: 200px;
+  min-width: 400px;
   background-color: #fff;
   margin: auto;
-  padding: 40px;
+  padding: 65px;
   min-height: 100px;
+  height: 540px;
 }
 
 .modal-dialog__close {
@@ -37,3 +38,20 @@
 .modal_active {
   display: flex;
 }
+
+.modal-dialog__subtitle {
+  text-align: center;
+  display: block;
+}
+
+.modal-dialog__title {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+  font-family: "Museo Sans Bold";
+}
+
+// .modal-dialog__subtitle {
+//   margin-bottom: 15px;
+// }

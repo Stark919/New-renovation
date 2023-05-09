@@ -9,7 +9,7 @@ close.addEventListener("click", closeModal);
 function openModal() {
   modal.classList.add("modal_active");
   console.log("Open");
-  window.closingTimeout = setTimeout(closeModal, 4000);
+  window.closingTimeout = setTimeout(closeModal, 110000);
 }
 
 function closeModal() {

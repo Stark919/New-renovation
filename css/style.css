@@ -22,6 +22,11 @@ button:hover {
   background-color: #ffe466;
 }
 
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
 h1,
 h2,
 h3 {
@@ -462,11 +467,12 @@ li {
   margin: auto;
   max-width: 450px;
   width: 80%;
-  min-width: 200px;
+  min-width: 400px;
   background-color: #fff;
   margin: auto;
-  padding: 40px;
+  padding: 65px;
   min-height: 100px;
+  height: 540px;
 }
 
 .modal-dialog__close {
@@ -485,6 +491,19 @@ li {
 
 .modal_active {
   display: flex;
+}
+
+.modal-dialog__subtitle {
+  text-align: center;
+  display: block;
+}
+
+.modal-dialog__title {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+  font-family: "Museo Sans Bold";
 }
 
 @media (min-width: 310px) {
@@ -647,6 +666,9 @@ li {
   }
   .cards__img_min {
     position: relative;
+  }
+  .cards__img_min > img {
+    width: 100%;
   }
   .cards__img_min::before {
     content: "";
@@ -1112,7 +1134,7 @@ li {
     padding-right: 0px;
   }
   .form__title {
-    margin-top: 80px;
+    margin-top: 100px;
     font-size: 18px;
     text-align: center;
     max-width: 400px;
@@ -1141,5 +1163,82 @@ li {
     display: block;
     margin: auto;
     line-height: 1.5;
+  }
+}
+.map {
+  width: 50%;
+}
+
+.footer {
+  display: flex;
+}
+
+.contacts-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contacts {
+  padding-top: 100px;
+  padding-left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts__title {
+  font-family: "Museo Sans Bold";
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.contacts-list__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__text {
+  font-family: "Museo Sans Bold";
+  color: #333333;
+  font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .map {
+    width: 100%;
+    order: 1;
+  }
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contacts-block {
+    display: flex;
+    justify-content: center;
+  }
+  .contacts__title {
+    font-size: 18px;
+    max-width: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
